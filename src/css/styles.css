@@ -90,11 +90,20 @@ border: 1px solid #808080;
 }
   
   .custom-button {
-    display: flex;
+  display: flex;
   padding: 8px 16px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 8px;
   background: #4E75FF;
+  color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+  } 
+
+  .custom-button:focus,
+  .custom-button:hover {
+   background: #6C8CFF;
   } 
