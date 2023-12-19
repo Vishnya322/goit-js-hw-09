@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
+      <h1>Welcome to Form</h1>
     </section>
+    <form class="feedback-form" autocomplete="off">
+      <label class="frame-label">
+        Email
+        <input class="group-style"   type="email" name="email"  autofocus />
+      </label>
+      <label class="frame-label">
+        Message
+        <textarea  class="group-style-text"   name="message"  rows="8"></textarea>
+      </label>
+          <button  class="custom-button"  type="submit">Submit</button>
+    </form>
 
     <script type="module" src="./js/02-form.js"></script>
   </body>

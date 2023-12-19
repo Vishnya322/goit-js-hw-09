@@ -23,7 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 /* Стилі галереї */
+
 .gallery {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -42,5 +44,57 @@
   display: block;
   box-shadow: 2px 5px 5px rgb(0, 0, 0, 0.5);
   max-width: 100%;
-  object-fit: cover; 
+  object-fit: cover;
+ 
 }
+
+/* Стилі для форми */
+
+ .feedback-form {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #FFF;
+  }
+  
+
+   .frame-label {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  }
+
+.group-style {
+  display: flex;
+width: 360px;
+height: 40px;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+border: 1px solid #808080;
+}
+
+.group-style-text {
+  display: flex;
+  width: 360px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  resize: none; 
+}
+  
+  .custom-button {
+    display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4E75FF;
+  } 
