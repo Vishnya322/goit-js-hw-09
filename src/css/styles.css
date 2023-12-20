@@ -101,9 +101,11 @@ border: 1px solid #808080;
 font-family: Montserrat;
 font-size: 16px;
 font-style: normal;
+border: 2px solid #4e75ff;
   } 
 
   .custom-button:focus,
   .custom-button:hover {
    background: #6C8CFF;
+   border-color: #fff;
   } 
