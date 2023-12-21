@@ -1,3 +1,6 @@
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 const images = [
     {
       preview:
@@ -72,7 +75,6 @@ const container = images
           <img
             class="gallery-image"
             src="${image.preview}"
-            data-source="${image.original}"
             alt="${image.description}"
           />
         </a>
@@ -84,12 +86,8 @@ const container = images
 const item = document.querySelector('.gallery');
 item.innerHTML = container;
 
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
-
 let gallery = new SimpleLightbox('.gallery a', {captionDelay: 250, captionsData: 'alt' });
-gallery.open({
-item: [
-  `<img src="${images.original}>"`,
-]
-});
+
+
+
+
