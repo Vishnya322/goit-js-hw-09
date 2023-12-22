@@ -1,5 +1,5 @@
 const FEEDBACK_DATA_KEY = "feedback-form-state";
-const FEEDBACK_MESSAGE_KEY = "feedback-message";
+
 
 const form = document.querySelector('.feedback-form');
 
@@ -47,7 +47,7 @@ form.addEventListener("submit", (event) => {
     console.log(formObject);
 
     localStorage.removeItem(FEEDBACK_DATA_KEY);
-    localStorage.removeItem(FEEDBACK_MESSAGE_KEY);
+    
     form.reset();
   } else {
     alert("Please fill in both fields."); 

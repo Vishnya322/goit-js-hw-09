@@ -67,7 +67,7 @@ const images = [
     },
   ];
 
-const container = images
+const galleryMarkup = images
   .map(
     (image) =>
       `<li class="gallery-item">
@@ -84,9 +84,9 @@ const container = images
     
 
 const item = document.querySelector('.gallery');
-item.innerHTML = container;
+item.innerHTML = galleryMarkup;
 
-let gallery = new SimpleLightbox('.gallery a', {captionDelay: 250, captionsData: 'alt' });
+const gallery = new SimpleLightbox('.gallery a', {captionDelay: 250, captionsData: 'alt' });
 
 
 
